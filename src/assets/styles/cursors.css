@@ -1,0 +1,31 @@
+html {
+  cursor: var(--cursor-default);
+}
+
+a[href],
+button,
+select,
+summary,
+label[for],
+[role='button'],
+[role='link'],
+input[type='checkbox'],
+input[type='radio'],
+input[type='submit'],
+input[type='button'] {
+  cursor: var(--cursor-pointer);
+}
+
+input:not(
+  [type='checkbox'],
+  [type='radio'],
+  [type='submit'],
+  [type='button'],
+  [type='reset'],
+  [type='file'],
+  [type='color'],
+  [type='range']
+),
+textarea {
+  cursor: text;
+}

@@ -1,0 +1,118 @@
+:root {
+  --font-primary: 'Array', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-display: 'VT323', monospace;
+  --font-logo: 'Montserrat', sans-serif;
+
+  --blue-100: #0079e4;
+  --blue-300: #087ef5;
+  --blue-500: #d9edfd;
+  --blue-600: #add8ff;
+  --blue-700: #f2f9ff;
+  --blue-800: #176bc9;
+
+  --navy-100: #011440;
+  --navy-200: #000078;
+  --navy-300: #1b3bcd;
+  --navy-400: #093277;
+
+  --archive-navy: #01038a;
+  --archive-screen: #00007f;
+  --case-note: #3435a1;
+  --archive-lav: #9999c9;
+  --pixel-orange: #f34e01;
+
+  --lime-100: #a6f30f;
+  --lime-200: #c4ef37;
+  --lime-300: #d4f865;
+  --lime-400: #d7ff3f;
+  --lime-500: #f9ffee;
+  --lime-600: #d3fd4f;
+
+  --pink-100: #f3b4d4;
+  --pink-200: #f660a4;
+  --pink-300: #ff6ca5;
+  --pink-400: #ff5393;
+  --pink-500: #ffeef2;
+
+  --orange-200: #fd8b04;
+  --orange-300: #ff7a14;
+  --orange-500: #fff7ed;
+
+  --yellow-100: #fcde3a;
+
+  --red-100: #d62933;
+  --red-200: #dc2626;
+  --green-100: #16a34a;
+
+  --black-900: #0a0a0a;
+  --black-800: #141414;
+  --gray-200: #f4f3f3;
+  --gray-300: #474747;
+  --gray-400: #808080;
+  --gray-500: #8c8c8c;
+  --gray-600: #8f8d9e;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --shadow-green:
+    0 -3px 0 0 rgba(132, 166, 0, 0.28) inset,
+    0 2px 0 0 rgba(251, 255, 209, 0.45) inset,
+    0 0 0 1px rgba(241, 255, 174, 0.72) inset;
+  --shadow-blue:
+    0 -3px 0 0 rgba(10, 74, 168, 0.32) inset,
+    0 2px 0 0 rgba(169, 210, 255, 0.55) inset,
+    0 0 0 1px rgba(125, 181, 255, 0.75) inset;
+  --shadow-red:
+    0 -3px 0 0 rgba(255, 154, 160, 0.26) inset,
+    0 2px 0 0 rgba(255, 154, 160, 0.48) inset,
+    0 0 0 1px rgba(255, 154, 160, 0.72) inset;
+  --shadow-card:
+    0 -3px 0 0 rgba(191, 191, 191, 0.28) inset,
+    0 3px 0 0 rgba(235, 235, 235, 0.5) inset,
+    0 0 0 2px rgba(230, 230, 230, 0.75) inset;
+
+  --heading-h1: clamp(44px, 4vw, 92px);
+  --heading-h2: clamp(44px, 5vw, 92px);
+  --body-size: 16px;
+
+  --container-width: clamp(
+    1500px,
+    calc(1500px + (100vw - 1440px) * 0.75),
+    1860px
+  );
+  --container-padding: 30px;
+  --viewport-edge: clamp(16px, 1.5625vw, 30px);
+  --container-padding-mobile: 16px;
+  --container-gutter: max(
+    var(--container-padding),
+    calc((100% - var(--container-width)) / 2 + var(--container-padding))
+  );
+  --header-height: 50px;
+  --header-pad: 20px;
+  --anchor-offset: calc(var(--header-height) + var(--header-pad) * 2);
+
+  --cursor-default:
+    image-set(
+        url('/cursors/cursor-default.png') 1x,
+        url('/cursors/cursor-default-2x.png') 2x
+      )
+      6 0,
+    auto;
+  --cursor-pointer:
+    image-set(
+        url('/cursors/cursor-pointer.png') 1x,
+        url('/cursors/cursor-pointer-2x.png') 2x
+      )
+      11 0,
+    pointer;
+
+  --transition-timing: cubic-bezier(0.5, 0.5, 0, 1);
+}
+
+@media (width < 1024px) {
+  :root {
+    --container-gutter: var(--container-padding-mobile);
+  }
+}

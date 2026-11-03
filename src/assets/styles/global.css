@@ -1,0 +1,100 @@
+html,
+body {
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--black-900);
+  background: var(--page-bg, var(--white));
+  font-size: var(--body-size);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.5s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    transition: none;
+  }
+}
+
+h1,
+h2 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--heading-h1);
+  line-height: 0.9;
+}
+
+h2 {
+  font-size: var(--heading-h2);
+  line-height: 1;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black-900);
+  font-family: var(--font-mono);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  overflow: clip;
+}
+
+html.is-loading,
+html.is-loading body {
+  overflow: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.hidden {
+  display: none !important;
+}
+
+section[id],
+footer[id] {
+  scroll-margin-top: var(--anchor-offset);
+}
+
+.mask-icon,
+.mask-icon-before::before,
+.mask-icon-after::after {
+  mask: var(--mask-src) no-repeat var(--mask-align, center) /
+    var(--mask-size, contain);
+  -webkit-mask: var(--mask-src) no-repeat var(--mask-align, center) /
+    var(--mask-size, contain);
+}
+
+@media (width < 1024px) {
+  .container {
+    padding-inline: var(--container-padding-mobile);
+  }
+  h1 {
+    font-weight: 500;
+    line-height: 1;
+  }
+}
+
+@media (width < 768px) {
+  :root { --heading-h2: clamp(30px, 8.2vw, 36px); }
+  h1, h2 { font-weight: 600; }
+}

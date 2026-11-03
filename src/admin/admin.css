@@ -1,0 +1,116 @@
+@import '../assets/styles/fonts.css';
+@import '../assets/styles/variables.css';
+@import '../assets/styles/reset.css';
+
+:root {
+  --cursor-pointer: pointer;
+  --cursor-default: default;
+
+  --adm-bg: var(--gray-200);
+  --adm-surface: var(--white);
+  --adm-ink: var(--black-900);
+  --adm-muted: #5c5a6b;
+  --adm-line: #d9d7e0;
+  --adm-accent: var(--navy-200);
+  --adm-focus: var(--navy-300);
+
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--adm-ink);
+  background: var(--adm-bg);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--adm-focus);
+  outline-offset: 2px;
+}
+
+.adm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 6px 14px;
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  color: var(--black);
+  background: var(--lime-400);
+  box-shadow: var(--shadow-green);
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+
+.adm-btn:hover:not(:disabled) {
+  color: var(--lime-400);
+  background: var(--black);
+}
+
+.adm-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.adm-btn--ghost {
+  border-color: var(--adm-line);
+  background: var(--adm-surface);
+  box-shadow: none;
+}
+
+.adm-btn--ghost:hover:not(:disabled) {
+  color: var(--white);
+  background: var(--adm-accent);
+}
+
+.adm-btn--danger {
+  border-color: var(--red-200);
+  color: var(--red-200);
+  background: var(--adm-surface);
+  box-shadow: none;
+}
+
+.adm-btn--danger:hover:not(:disabled) {
+  color: var(--white);
+  background: var(--red-200);
+}
+
+.adm-input {
+  width: 100%;
+  min-height: 38px;
+  padding: 8px 10px;
+  border: 1px solid var(--adm-line);
+  border-radius: 8px;
+  color: var(--adm-ink);
+  background: var(--adm-surface);
+}
+
+.adm-input:focus {
+  border-color: var(--adm-accent);
+}
+
+.adm-error {
+  color: var(--red-200);
+  font-weight: 500;
+}
+
+.adm-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

@@ -1,0 +1,22 @@
+export const DECOR = [
+  {
+    id: 1,
+    type: 'plus',
+    x: 397,
+    y: 350,
+    fx: 35,
+    fy: 55,
+    mx: 320,
+    my: 319,
+    pinLeft: true,
+  },
+  { id: 2, type: 'plus', x: 58, y: 623, fx: 807, fy: 13, mx: 21, my: 570 },
+  { id: 3, type: 'plus', x: 1133, y: 236, fx: 877, fy: 932, mx: 182, my: 5 },
+  { id: 4, type: 'plus', x: 720, y: 951, fx: 716, fy: 472, mx: 323, my: 132 },
+  { id: 5, type: 'plus', x: 1353, y: 857 },
+  { id: 6, type: 'cross', x: 385, y: 70, mx: 263, my: 57 },
+  { id: 7, type: 'cross', x: 1256, y: 118, fx: 1206, fy: 68, mx: 276, my: 563 },
+  { id: 8, type: 'frame', x: 1356, y: 355, fx: 1401, fy: 553, mx: 16, my: 13 },
+  { id: 9, type: 'frame', x: 66, y: 70, fx: 385, fy: 951, mx: 67, my: 195 },
+  { id: 10, type: 'frame', x: 1312, y: 949, formOnly: true },
+];

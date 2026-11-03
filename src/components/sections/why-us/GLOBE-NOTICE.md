@@ -1,0 +1,3 @@
+The globe is drawn as a fixed 2D dot grid. Only radii change; screen coordinates, opacity and blue color do not rotate or receive perspective/shading. A filtered land mask supplies continuously interpolated water/coast/land sizes. The longitude of that mask advances while the scene is visible, independently of scrolling. The blue comes from the recovered planet.svg.
+
+land-mask.json was generated from Natural Earth land-110m via world-atlas (public-domain geographic data). The generated file contains a 720×360, run-length-compressed, base64-encoded grayscale map with a small coastline filter. There is no runtime geographic library or network request.
