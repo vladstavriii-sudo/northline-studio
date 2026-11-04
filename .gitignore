@@ -134,3 +134,18 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Local Northline data and demo copies
+dist-admin/
+.env*
+!.env.example
+data/*
+!data/.gitkeep
+.DS_Store
+work/
+outputs/
+video-output/
+standalone-process/
+standalone-recording/
+standalone-why-us/
+RECOVERY.md

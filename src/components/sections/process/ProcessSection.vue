@@ -336,8 +336,12 @@ const processRef = useScrollScene((el) => {
   .process__wrapper-text {
     position: absolute;
     left: var(--grid-x);
-    bottom: var(--grid-x);
+    bottom: var(--container-padding);
     width: max(320px, calc(var(--text-w, 533) * var(--s)));
+  }
+
+  .process__stat-text {
+    min-height: 4lh;
   }
 
   .process__stat-label--date {
